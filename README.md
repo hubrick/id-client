@@ -1,10 +1,10 @@
-# Generic Async ID Client
-A generic async client implementation for client services such as [Flurry Unique id generation service](https://github.com/BazuSports/flurry). It's based on a producer-consumer pattern. A thread pool constantly fetches new ids and keeps them in a local queue.
+# Async ID client
+Async ID client implementation for id services such as [Flurry Unique id generation service](https://github.com/BazuSports/flurry). It's based on a producer-consumer pattern. A thread pool constantly fetches new ids and keeps them in a local queue.
 
 ## Compatibility
 - Java 6+
 - Supported clients
--- Flurry v0.2.0-beta
+  - Flurry v0.2.0-beta
 
 ## Dependency
 ```xml
@@ -16,10 +16,8 @@ A generic async client implementation for client services such as [Flurry Unique
 ```
 ## Features
 - Flurry
-- - Id collision protection (If the servers are misconfiguration and have the same workerId a collision can occur. The client checks the configuration on startup.)
-- - Automated reconnection to servers (If a server was down and shows up again the client will autocratically reconnect and start to consume the ids again)
-
-## How to use
+  - Id collision protection (If the servers are misconfiguration and have the same workerId a collision can occur. The client checks the configuration on startup.)
+  - Automated reconnection to servers (If a server was down and shows up again the client will automatically reconnect and start to consume the ids again)
 
 ## How to use
 
