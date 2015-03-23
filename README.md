@@ -6,7 +6,7 @@ Async ID client implementation for id services such as [Flurry Unique id generat
 - Supported clients
   - Flurry v0.2.0-beta
 
-## Dependency
+## Dependency (still not available due to problems to publish it to central repo)
 ```xml
 <dependency>
     <groupId>com.hubrick.client</groupId>
